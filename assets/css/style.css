@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px dashed black;
 }
 
 html,
@@ -15,47 +16,40 @@ body {
   header {
     background-color: cyan;
     .site_header {
+      min-height: 2rem;
       background-color: yellow;
     }
   }
   main {
-    #jumbotron_container {
+    .jumbotron_container {
+      min-height: 20rem;
       background-color: blue;
       #jumbotron {
+        min-height: 20rem;
         background-color: purple;
       }
     }
-    #io_container {
-      background-color: black;
 
-      .half_1 {
-        background-color: lightskyblue;
-      }
-      .half_2 {
-        background-color: pink;
-      }
-    }
-    #community_container {
-      background-color: gray;
-      .half_1 {
-        background-color: lightskyblue;
-      }
-      .half_2 {
-        background-color: pink;
-      }
-    }
-    #fandom_container {
+    .feature_box_container {
       background-color: black;
-      .half_1 {
-        background-color: lightskyblue;
-      }
-      .half_2 {
-        background-color: pink;
-      }
     }
+
+    .feature_box_container + .box2 {
+      background-color: gray;
+    }
+
+    .big_box {
+      background-color: aquamarine;
+    }
+
+    .small_box {
+      background-color: pink;
+    }
+
     #technology_container {
       background-color: gray;
       #technology {
+        min-height: 44rem;
         background-color: green;
       }
     }
@@ -63,6 +57,7 @@ body {
   #site_footer {
     background-color: darkslategray;
     #upper_footer {
+      min-height: 22rem;
       .bigger_footer_area {
         background-color: salmon;
       }
@@ -71,6 +66,7 @@ body {
       }
     }
     #lower_footer {
+      min-height: 3rem;
       background-color: turquoise;
     }
     #footer_logo,
@@ -108,34 +104,28 @@ a {
 }
 
 .site_header {
-  min-height: 2rem;
   justify-content: space-between;
   align-items: center;
   max-width: 70%;
   margin: auto;
-}
 
-#site_logo {
-  flex-grow: 1;
-  margin-left: 1rem;
-}
+  a {
+    flex-grow: 1;
+    margin-left: 1rem;
+  }
 
-.nav_menu {
-  flex-grow: 3;
-  justify-content: center;
-}
+  ul {
+    flex-grow: 3;
+    justify-content: center;
+  }
 
-#login_btn {
-  flex-grow: 1;
-  text-align: end;
-  margin-right: 1rem;
+  div {
+    flex-grow: 1;
+    text-align: end;
+    margin-right: 1rem;
+  }
 }
 /* HEADER END */
-
-#jumbotron_container,
-#jumbotron {
-  min-height: 20rem;
-}
 
 #jumbotron {
   max-width: 50%;
@@ -147,23 +137,13 @@ a {
 .feature_boxes {
   max-width: 70%;
   margin: auto;
-  min-height: 22rem;
 }
 
-.half_1,
-.half_2 {
-  min-height: 22rem;
-}
-
-#half_1_io,
-#half_2_co,
-#half_1_fan {
+.big_box {
   flex-grow: 2;
 }
 
-#half_2_io,
-#half_1_co,
-#half_2_fan {
+.small_box {
   flex-grow: 1;
 }
 
@@ -172,7 +152,6 @@ a {
 #technology {
   max-width: 70%;
   margin: auto;
-  min-height: 44rem;
 }
 
 /*TECHNOLOGY BOX END */
@@ -186,7 +165,6 @@ a {
 }
 
 #upper_footer {
-  min-height: 22rem;
   max-width: 70%;
   margin: auto;
   margin-bottom: 2rem;
@@ -194,7 +172,6 @@ a {
 }
 
 #lower_footer {
-  min-height: 3rem;
   max-width: 70%;
   margin: auto;
   margin-top: 2rem;
@@ -208,3 +185,6 @@ hr {
 }
 
 /*FOOTER END */
+.feature_boxes {
+  min-height: 22rem;
+}
