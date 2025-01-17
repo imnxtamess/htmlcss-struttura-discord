@@ -55,6 +55,12 @@ body {
         background-color: pink;
         }
   }
+  #technology_container{
+    background-color: gray;
+    #technology{
+        background-color: green;
+    }
+  }
 }
 
 .d-flex {
@@ -124,7 +130,6 @@ body {
   max-width: 70%;
   margin: auto;
   min-height: 22rem;
-  justify-content: center;
 }
 
 .half_1,
@@ -141,4 +146,13 @@ body {
 }
 
 /*FEATURE BOXES END */
+
+
+#technology{
+    max-width: 70%;
+    margin:auto;
+    min-height: 44rem;
+}
+
+/*TECHNOLOGY BOX END */
 
