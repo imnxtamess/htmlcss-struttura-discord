@@ -27,6 +27,33 @@ body {
         background-color: purple;
       }
     }
+    #io_container {
+      background-color: black;
+
+      .half_1 {
+        background-color: lightskyblue;
+      }
+      .half_2 {
+        background-color: pink;
+      }
+    }
+    #community_container{
+        background-color: gray;
+        .half_1 {
+        background-color: lightskyblue;
+      }
+      .half_2 {
+        background-color: pink;
+    }
+  }
+    #fandom_container{
+        background-color: black;
+        .half_1 {
+        background-color: lightskyblue;
+        }
+        .half_2 {
+        background-color: pink;
+        }
   }
 }
 
@@ -46,9 +73,8 @@ body {
   }
 }
 
-.center_content {
-  max-width: 50%;
-  margin: auto;
+.container_spacing {
+  padding: 3rem 0;
 }
 
 /*utilities end*/
@@ -61,6 +87,8 @@ body {
   min-height: 2rem;
   justify-content: space-between;
   align-items: center;
+  max-width: 70%;
+  margin: auto;
 }
 
 #site_logo {
@@ -80,11 +108,37 @@ body {
 }
 /* HEADER END */
 
-#jumbotron_container {
-  min-height: 20rem;
-  padding: 3rem 0;
-}
-
+#jumbotron_container,
 #jumbotron {
   min-height: 20rem;
 }
+
+#jumbotron {
+  max-width: 50%;
+  margin: auto;
+}
+
+/* JUMBOTRON END */
+
+.feature_boxes {
+  max-width: 70%;
+  margin: auto;
+  min-height: 22rem;
+  justify-content: center;
+}
+
+.half_1,
+.half_2 {
+  min-height: 22rem;
+}
+
+#half_1_io,#half_2_co,#half_1_fan{
+    flex-grow: 2;
+}
+
+#half_2_io,#half_1_co,#half_2_fan{
+    flex-grow: 1;
+}
+
+/*FEATURE BOXES END */
+
