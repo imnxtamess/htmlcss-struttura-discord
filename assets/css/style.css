@@ -4,6 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px solid black;
+  border-style: dashed;
 }
 
 html,
@@ -18,12 +20,18 @@ body {
       background-color: yellow;
     }
   }
+  main {
+    #jumbotron_container {
+      background-color: blue;
+      #jumbotron {
+        background-color: purple;
+      }
+    }
+  }
 }
 
 .d-flex {
   display: flex;
-  border: 1px solid black;
-  border-style: dashed;
 }
 
 .unstyled_list {
@@ -33,18 +41,20 @@ body {
     text-decoration: none;
     &:hover {
       text-decoration: underline;
+      color: black;
     }
   }
 }
 
 .center_content {
-  max-width: 70%;
+  max-width: 50%;
   margin: auto;
 }
 
 /*utilities end*/
 
-header {
+#header_container {
+  padding: 0.5rem;
 }
 
 .site_header {
@@ -67,4 +77,14 @@ header {
   flex-grow: 1;
   text-align: end;
   margin-right: 1rem;
+}
+/* HEADER END */
+
+#jumbotron_container {
+  min-height: 20rem;
+  padding: 3rem 0;
+}
+
+#jumbotron {
+  min-height: 20rem;
 }
