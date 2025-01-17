@@ -62,6 +62,20 @@ body {
     }
   }
 }
+   #site_footer{
+    background-color: darkslategray;
+    #upper_footer{
+        .bigger_footer_area{
+         background-color: salmon;
+        }
+        .smaller_footer_area{
+            background-color: cyan;
+         }
+    }
+    #lower_footer{
+        background-color: turquoise;
+    }
+  }
 
 .d-flex {
   display: flex;
@@ -70,14 +84,15 @@ body {
 .unstyled_list {
   list-style: none;
   gap: 1rem;
-  a {
+}
+
+a {
     text-decoration: none;
     &:hover {
       text-decoration: underline;
       color: black;
     }
   }
-}
 
 .container_spacing {
   padding: 3rem 0;
@@ -156,3 +171,36 @@ body {
 
 /*TECHNOLOGY BOX END */
 
+.bigger_footer_area{
+    flex-grow: 2;
+}
+
+.smaller_footer_area{
+    flex-grow:1;
+    background-color: red;
+}
+
+#upper_footer{
+    min-height: 22rem;
+    max-width: 70%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+#lower_footer{
+    min-height: 3rem;
+    max-width: 70%;
+    margin: auto;
+    padding: 1,0rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    
+}
+
+#footer_logo,#footer_btn{
+    background-color: palevioletred;
+}
+hr{
+    border-color: white;
+}
