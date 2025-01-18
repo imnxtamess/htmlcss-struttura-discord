@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px dashed black;
 }
 
 html,
@@ -36,6 +35,9 @@ body {
 
     .feature_box_container + .box2 {
       background-color: gray;
+    }
+    .feature_boxes {
+      min-height: 22rem;
     }
 
     .big_box {
@@ -185,6 +187,3 @@ hr {
 }
 
 /*FOOTER END */
-.feature_boxes {
-  min-height: 22rem;
-}
